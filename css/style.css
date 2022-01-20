@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -49,8 +50,36 @@ main .container .cards {
 
 main .container .cards .card {
   width: calc(100% / 5 - 20px);
-  height: 300px;
+  height: 330px;
   margin: 0 10px 25px 10px;
   background-color: #2e3a46;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+main .container .cards .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .container .cards .card img {
+  width: 90%;
+}
+
+main .container .cards .card h3 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0 10px;
+}
+
+main .container .cards .card p {
+  color: #808080;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
